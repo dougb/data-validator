@@ -1,0 +1,15 @@
+---
+
+numKeyCols: 2
+numErrorsToReport: 1
+detailedErrors: false
+
+vars:
+  - name: ONE
+    value: "1"
+
+tables:
+  - orcFile: ${DATA_DIR}/testData.orc
+    checks:
+      - type: nullCheck
+        column: div7
